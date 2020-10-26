@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { catchError, tap, map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import {  map } from 'rxjs/operators';
+
 import { Http, Response} from '@angular/http';
 
 
