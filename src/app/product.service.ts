@@ -17,7 +17,7 @@ export class ProductService {
   //By default, a method may return anything because it can infer that it is going to be of type Object<any>
   getAlbum(id: number): Observable<Album>  {
     
-    return this._http.get(this._albumUrl).map((response) => response.json()
+    return this._http.get(this._albumUrl).map((response) => <Album>response.json()
       )
     }
 
