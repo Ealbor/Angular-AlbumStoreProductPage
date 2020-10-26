@@ -11,7 +11,7 @@ import{ProductService} from '../product.service';
 })
 export class ProductDescriptionComponent implements OnInit {
 
-  private albumInfo: object;
+  albumInfo: object;
 
 
   constructor(private _productService:ProductService) { 

@@ -4,6 +4,8 @@ import {  map } from 'rxjs/operators';
 
 import { Http, Response} from '@angular/http';
 
+import 'rxjs/add/operator/map';
+
 
 @Injectable()
 export class ProductService {
@@ -14,9 +16,7 @@ export class ProductService {
   //By default, a method may return anything because it can infer that it is going to be of type Object<any>
   getAlbum(id: number)  {
     
-    return this._http.get(this._albumUrl).pipe(
-      map((response:Response) => response.json()) 
-
+    return this._http.get(this._albumUrl).map((response:Response) => response.json() 
       )
     }
 
